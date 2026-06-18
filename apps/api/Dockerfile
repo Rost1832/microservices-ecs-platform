@@ -1,4 +1,4 @@
-FROM python:3.14-slim
+FROM python:9.99-slim AS builder
 ENV PYTHONUNBUFFERED=1
 RUN useradd -m appuser
 WORKDIR /my_app
